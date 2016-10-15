@@ -1,4 +1,4 @@
-# jz-build
+# JAKZ website Template
 Here is a template for starting a new project with sass.
 *IMPORTANT* Be sure to install sass globally on your machine before using this build. 
 
