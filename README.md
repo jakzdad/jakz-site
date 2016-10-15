@@ -11,7 +11,9 @@ Step 3: To ensure sass is installed in terminal type in 'sass -v'. This will sho
 Step 4: Download or Clone this repo to your computer. To clone repo do the following:
   
   -In terminal navigate to a destination folder 'cd Documents' (for example). Then type in 'git clone (paste the web adress for the repo here)' then hit enter. Once comlete jz-build will be locally stored on your machine. You can now rename jz-build if you'd like.
-  
-Step 5: Using your favorite code editor open the site template. In terminal navigate to your new site folder 'cd Documents/jz-build' and then type in 'sass --watch sass:css'. This will begin trolling the folder to find any sass styles and convert them to css.
 
-Step 6: You are ready to begin your new project!
+Step 5: Once you've finished cloning, in terminal input 'git checkout -b -project name- . This will create a separate branch for your project.
+  
+Step 6: Using your favorite code editor open the site template. In terminal navigate to your new site folder 'cd Documents/jz-build' and then type in 'sass --watch sass:css'. This will begin trolling the folder to find any sass styles and convert them to css.
+
+Step 7: You are ready to begin your new project!
