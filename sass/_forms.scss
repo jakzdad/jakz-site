@@ -1,0 +1,12 @@
+@mixin form-reset {
+  input {
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    width: 200px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

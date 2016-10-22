@@ -1,0 +1,81 @@
+.site-name {
+  color: $d2;
+  position: absolute;
+}
+.hero-container {
+  background-image: url('../images/01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, 0.4);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .intro-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    .tagline {
+      padding-top: 200px;
+      h1 {
+        color: $d2;
+        text-align: center;
+        font-size: 85px;
+        font-weight: 500;
+        line-height: 90px;
+      }
+    }
+  }
+
+  .form-content {
+    position:relative;
+    z-index: 2;
+    width: 100%;
+
+    p {
+      text-align: center;
+      color: $d3;
+    }
+  }
+
+  .sign-up {
+    @include form-reset;
+    position: absolute;
+    left: 50%;
+    margin-left: -185px;
+
+    .submit-btn {
+      @include button-reset($h1);
+    }
+  }
+
+}
+
+.about-container {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+
+  .about-logo {
+    img {
+      width: 400px;
+      height: auto;
+    }
+  }
+
+  .about-content {
+    width: 460px;
+  }
+}

@@ -1,0 +1,21 @@
+@mixin button-reset($color){
+  border: none;
+  background: $color;
+  padding: 10px 40px;
+  margin: 5px;
+  color: $d3;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  transition: background 0.3s ease-in;
+
+  &:hover {
+    background: darken($color, 8%);
+    transition: background 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

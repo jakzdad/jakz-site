@@ -1,0 +1,29 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+  
+  .nav-main {
+    list-style: none;
+    display: flex;
+    background: #222222;
+    padding: 0 150px;
+    justify-content: flex-end;
+    margin: 0;
+
+    li {
+      padding: 20px;
+    }
+
+    a {
+      color: $d3;
+      font-size: 12px;
+
+      &:hover {
+        color: $h1;
+      }
+    }
+
+  }
+}
