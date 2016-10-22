@@ -5,6 +5,8 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
+  font-family: $font;
 
   h1 {
     @include h1;
@@ -43,5 +45,6 @@ body {
 
   a {
     font-size: 20px;
+    text-decoration: none;
   }
 }
