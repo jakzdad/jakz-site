@@ -1,0 +1,50 @@
+.social-nav {
+  display: flex;
+  list-style: none;
+
+  li {
+    padding: 0 15px;
+
+    &:hover {
+      a:before {
+        color: $h1;
+      }
+    }
+  }
+
+  .facebook {
+    &:before {
+      content: '\e905';
+      font-family: 'Icomoon';
+      color: white;
+      font-size: 30px;
+    }
+  }
+
+  .instagram {
+    &:before {
+      content: '\e904';
+      font-family: 'Icomoon';
+      color: white;
+      font-size: 30px;
+    }
+  }
+
+  .twitter {
+    &:before {
+      content: '\e903';
+      font-family: 'Icomoon';
+      color: white;
+      font-size: 30px;
+    }
+  }
+
+  .soundcloud {
+    &:before {
+      content: '\e902';
+      font-family: 'Icomoon';
+      color: white;
+      font-size: 30px;
+    }
+  }
+}

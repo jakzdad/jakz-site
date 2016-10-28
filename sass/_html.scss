@@ -11,36 +11,44 @@ body {
   h1 {
     @include h1;
     color: $d1;
+    font-weight: 300;
   }
 
   h2 {
     @include h2;
     color: $d1;
+    font-weight: 300;
   }
 
   h3 {
     @include h3;
     color: $d1;
+    font-weight: 300;
   }
 
   h4 {
     @include h4;
     color: $d1;
+    font-weight: 300;
   }
 
   h5 {
     @include h5;
     color: $d1;
+    font-weight: 300;
   }
 
   h6 {
     @include h6;
     color: $d1;
+    font-weight: 300;
   }
 
   p {
-    color: $d2;
-    font-size: 20px;
+    color: $d1;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
   }
 
   a {

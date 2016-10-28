@@ -3,12 +3,13 @@ nav {
   top: 0;
   width: 100%;
   z-index: 300;
-  
+
   .nav-main {
     list-style: none;
     display: flex;
-    background: #222222;
-    padding: 0 150px;
+    // background: #222222;
+    padding: 0px 150px;
+    margin-top: 20px;
     justify-content: flex-end;
     margin: 0;
 

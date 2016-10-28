@@ -5,11 +5,15 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--FONTS AND ICONS-->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/1a7e3b9250/AtticRecords/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/585075a251/AtticRecords/style.css">
   <!--STYLESHEETS-->
   <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
   <!--MISC.-->
+  <script type="text/javascript" src="js/jquery-3.1.1.slim.js"></script>
+  <script src="js/slick.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -51,10 +55,83 @@
     </div>
 
     <div class="about-content">
-      <h2>ABOUT <strong>US</strong></h2>
+      <h4>ABOUT<strong> US</strong></h4>
       <p>Established in 2009, Attic Records LLC aims to build a reputation of representing the best talent across multiple musical genres and span those talents across the globe. Lex and Jack David, the current artists signed to the label, aim to bring that goal to life.</p>
     </div>
   </div>
+
+  <div id="live" class="live-container">
+    <div class="live-content">
+      <h4>WE ARE <strong>LIVE</strong></h4>
+      <p>Stay tuned for future live events</p>
+      <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sully's+Pub,+Park+Street,+Hartford,+CT,+United+States&amp;key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+      <form class="sign-up" action="" method="post">
+        <input type="email" name="email address" placeholder="email address">
+        <button type="submit" class="submit-btn" name="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="lex" class="lex-container">
+    <div class="lex-content">
+      <h4><strong>LEX</strong></h4>
+      <p>Lex, formerly A-lex, is a rap artist and current CEO of Attic Records. He has been in the mix with making music over 10 years now, and with his ups and downs in life, his story means to be told. Born in Los Angeles and raised in Bloomfield CT, there is an enormous amount of culture running through his veins. His raw and witty wordplay, along with a distinctive voice sets him apart from most of his peers in the business. His inspirations come from artists from the past, like Wu-Tang, Tribe Called Quest, and Onyx. Lex wants to represent the side of Hip-Hop that seems to have lost its place in the world and bring it back on a larger scale.</p>
+      <ul class="social-nav">
+        <li><a href="#" class="facebook"></a></li>
+        <li><a href="#" class="instagram"></a></li>
+        <li><a href="#" class="twitter"></a></li>
+        <li><a href="#" class="soundcloud"></a></li>
+      </ul>
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/136382253&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false&amp;color=222222"></iframe>
+      <h5 class="latest">Latest Tracks</h5>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/224790229&amp;color=222222"></iframe>
+      <div class="lex-gallery">
+        <img src="images/gallery/013.jpg" alt="lex-gallery" />
+        <img src="images/gallery/014.jpg" alt="lex-gallery" />
+        <img src="images/gallery/015.jpg" alt="lex-gallery" />
+        <img src="images/gallery/016.jpg" alt="lex-gallery" />
+      </div>
+    </div>
+  </div>
+
+  <div id="jackdavid" class="jackdavid-container">
+    <div class="jackdavid-content">
+      <h4><strong>JACK DAVID</strong></h4>
+      <p>21 year old Jack La Cilento also known as "Jack David" is a Hip-Hop artist from Enfield, CT. He was raised on rap due to his father being a battle rapper from NY. He has many influences in his life that have created the artist he is today from: Eminem, Biggie Smalls, Jay-Z, Nas, Outcast, Fabolous, Kendrick Lamar, Drake, J. Cole, 50 Cent, The Game, Lil’ Wayne, Kanye West, Justin Timberlake, Craig David, Usher, Frank Ocean, Chris Brown and many more. He wants to make music that is relatable to almost everyone, storytelling is a big portion of his music and is his outlet in life to get things off his chest whether it's a positive or negative time in his life.</p>
+      <ul class="social-nav">
+        <li><a href="#" class="facebook"></a></li>
+        <li><a href="#" class="instagram"></a></li>
+        <li><a href="#" class="twitter"></a></li>
+        <li><a href="#" class="soundcloud"></a></li>
+      </ul>
+      <h5 class="latest">Latest Tracks</h5>
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/242243235&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false&amp;color=222222"></iframe>
+      <div class="jackdavid-gallery">
+        <img src="images/gallery/09.jpg" alt="jackdavid-gallery" />
+        <img src="images/gallery/010.jpg" alt="jackdavid-gallery" />
+        <img src="images/gallery/011.jpg" alt="jackdavid-gallery" />
+        <img src="images/gallery/012.jpg" alt="jackdavid-gallery" />
+      </div>
+    </div>
+  </div>
+
+  <div id="videos" class="videos-container">
+    <div class="video-content">
+      <h4>OUR <strong>VIDEOS</strong></h4>
+      <div class="video-slider">
+        <div class="video">
+          <iframe  width="640" height="360" src="https://www.youtube.com/embed/Qu-P8ZgsoAQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe  width="640" height="360" src="https://www.youtube.com/embed/smQC5b1tOCY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe  width="640" height="360" src="https://www.youtube.com/embed/-PbRlNZDNPA" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <footer>
 </footer>

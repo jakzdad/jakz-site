@@ -29,3 +29,11 @@ $font: 'Lato', sans-serif;
   font-size: $h6-size;
   line-height: $h6-line-height;
 }
+
+@mixin line-under($width) {
+  content: '';
+  display: block;
+  width: $width;
+  height: 3px;
+  background: $h1;
+}

@@ -15,7 +15,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(black, 0.4);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 90%);
     display: block;
     position: absolute;
     top: 0;
@@ -66,7 +66,10 @@
 .about-container {
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 80px 250px;
+  align-items: center;
+
 
   .about-logo {
     img {
@@ -77,5 +80,282 @@
 
   .about-content {
     width: 460px;
+
+    h4 {
+      font-weight: 300;
+      &:after {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 3px;
+        position: absolute;
+        background: $h1;
+        margin-top: 20px;
+      }
+    }
   }
+}
+
+.live-container {
+  background-image: url('../images/07.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.7);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .live-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 150px 0;
+    z-index: 2;
+
+    h4 {
+      color: white;
+      position: relative;
+
+      &:before {
+        @include line-under(70px);
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        bottom: -10px;
+      }
+      &:after {
+        @include line-under(50px);
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: -20px;
+      }
+    }
+
+    p {
+      color: white;
+    }
+
+    iframe {
+      width: 500px;
+      height: 300px;
+    }
+    .sign-up {
+      @include form-reset;
+      padding-top: 40px;
+
+      .submit-btn {
+        @include button-reset($h1);
+      }
+    }
+  }
+
+}
+
+.lex-container {
+  background-image: url('../images/04.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 230px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.7);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .lex-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      color: white;
+      position: relative;
+
+      &:before {
+        @include line-under(70px);
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        bottom: -10px;
+      }
+      &:after {
+        @include line-under(50px);
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: -20px;
+      }
+    }
+
+    p {
+      width: 750px;
+      text-align: center;
+      color: white;
+    }
+
+    h5 {
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    .lex-gallery {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0;
+
+      img {
+        width: 260px;
+        height: 260px;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.jackdavid-container {
+  background-image: url('../images/06.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 230px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.7);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .jackdavid-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      color: white;
+      position: relative;
+
+      &:before {
+        @include line-under(70px);
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        bottom: -10px;
+      }
+      &:after {
+        @include line-under(50px);
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: -20px;
+      }
+    }
+
+    p {
+      width: 750px;
+      text-align: center;
+      color: white;
+    }
+
+    h5 {
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    .jackdavid-gallery {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0;
+
+      img {
+        width: 260px;
+        height: 260px;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.videos-container {
+  background-image: url('../images/08.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  padding: 230px 200px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.7);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    h4 {
+      color: white;
+      position: relative;
+
+      &:before {
+        @include line-under(70px);
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        bottom: -10px;
+      }
+      &:after {
+        @include line-under(50px);
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: -20px;
+      }
+    }
+
+    .video-slider {
+      width: 640px;
+      height: 360px;
+    }
+  }
+
 }
