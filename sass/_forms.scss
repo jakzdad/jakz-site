@@ -10,3 +10,50 @@
     }
   }
 }
+
+#contact-form {
+  @include form-reset;
+  display: flex;
+  flex-direction: column;
+
+
+  .row-one {
+    display: flex;
+    justify-content: space-between;
+
+    .form-name {
+      width: 45%;
+    }
+
+    .form-email {
+      width: 45%;
+    }
+  }
+
+
+
+  .form-message {
+    width: 100%;
+  }
+
+  input, textarea {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 2px;
+    width: 100%;
+    margin: 5px;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  label {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.submit-btn {
+  @include button-reset($h1);
+}

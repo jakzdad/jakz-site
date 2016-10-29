@@ -8,6 +8,11 @@ body {
   margin: 0;
   font-family: $font;
 
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+
   h1 {
     @include h1;
     color: $d1;

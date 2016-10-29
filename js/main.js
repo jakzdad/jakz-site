@@ -11,11 +11,12 @@ $(document).ready(function(){
     }
   });
 
+  //Video Section Slider
   $('.videos-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1
   });
 
-});
+  //iFrameResize
 
-//Video Section Slider
+});

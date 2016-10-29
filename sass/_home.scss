@@ -310,8 +310,12 @@
 .videos-container {
   width: 100%;
 
-  .slick-slide {
-    background: url('../images/08.jpg');
+  .slick-arrow {
+
+  }
+
+  .lex {
+    background: url('../images/lex-vid.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -319,23 +323,56 @@
     padding: 80px 0;
     text-align: center;
     width: 100%;
+  }
 
-    &:before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: rgba(black, 0.1);
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
+  .jackdavid {
+    background: url('../images/group-vid.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slick-slide {
+
+    .overlay {
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(black, 0.6);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
     }
 
     .content {
       position: relative;
       z-index: 2;
+
+      h3 {
+        color: white;
+      }
     }
   }
+}
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 80px 200px;
+  align-items: center;
+
+  h4 {
+    text-align: center;
+  }
 
 }
