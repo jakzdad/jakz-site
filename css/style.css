@@ -306,6 +306,32 @@ nav {
     color: white;
     font-size: 30px; }
 
+.newsletter-signup input.email {
+  padding: 10px 10px !important;
+  border: none !important;
+  border-radius: 0px !important;
+  height: 36px !important;
+  width: 200px !important; }
+  .newsletter-signup input.email:focus {
+    outline: none; }
+.newsletter-signup .submit-btn {
+  border: none;
+  background: #b50d0d;
+  padding: 10px 40px;
+  margin: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  transition: background 0.3s ease-in;
+  margin: 0 !important; }
+  .newsletter-signup .submit-btn:hover {
+    background: #8f0a0a;
+    transition: background 0.3s ease-in;
+    cursor: pointer; }
+  .newsletter-signup .submit-btn:focus {
+    outline: none; }
+
 #contact-form {
   display: flex;
   flex-direction: column; }
@@ -334,6 +360,8 @@ nav {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 14px; }
+    #contact-form input:focus, #contact-form textarea:focus {
+      outline: rgba(0, 0, 0, 0.5) solid 1px; }
   #contact-form label {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -396,33 +424,6 @@ nav {
     .hero-container .form-content p {
       text-align: center;
       color: #fff; }
-  .hero-container .sign-up {
-    position: absolute;
-    left: 50%;
-    margin-left: -185px; }
-    .hero-container .sign-up input {
-      padding: 10px 10px;
-      border: none;
-      font-size: 14px;
-      width: 200px; }
-      .hero-container .sign-up input:focus {
-        outline: none; }
-    .hero-container .sign-up .submit-btn {
-      border: none;
-      background: #b50d0d;
-      padding: 10px 40px;
-      margin: 5px;
-      color: #fff;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: normal;
-      transition: background 0.3s ease-in; }
-      .hero-container .sign-up .submit-btn:hover {
-        background: #8f0a0a;
-        transition: background 0.3s ease-in;
-        cursor: pointer; }
-      .hero-container .sign-up .submit-btn:focus {
-        outline: none; }
 
 .about-container {
   display: flex;
@@ -692,6 +693,27 @@ nav {
   padding: 80px 200px;
   align-items: center; }
   .contact-container h4 {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+    .contact-container h4:before {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #b50d0d;
+      position: absolute;
+      left: 50%;
+      margin-left: -35px;
+      bottom: -10px; }
+    .contact-container h4:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #b50d0d;
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      bottom: -20px; }
 
 /*# sourceMappingURL=style.css.map */

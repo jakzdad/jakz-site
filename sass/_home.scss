@@ -50,17 +50,6 @@
     }
   }
 
-  .sign-up {
-    @include form-reset;
-    position: absolute;
-    left: 50%;
-    margin-left: -185px;
-
-    .submit-btn {
-      @include button-reset($h1);
-    }
-  }
-
 }
 
 .about-container {
@@ -373,6 +362,22 @@
 
   h4 {
     text-align: center;
+    position: relative;
+
+    &:before {
+      @include line-under(70px);
+      position: absolute;
+      left: 50%;
+      margin-left: -35px;
+      bottom: -10px;
+    }
+    &:after {
+      @include line-under(50px);
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      bottom: -20px;
+    }
   }
 
 }
