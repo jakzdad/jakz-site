@@ -13,6 +13,10 @@ nav {
     justify-content: flex-end;
     margin: 0;
 
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+
     li {
       padding: 20px;
     }
@@ -26,5 +30,112 @@ nav {
       }
     }
 
+  }
+
+  .mobile-header {
+    @media screen and (min-width: 901px){
+      display: none;
+    }
+    background: #222222;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+
+    h4 {
+      color: white;
+      position: absolute;
+      top: -6px;
+      line-height: 0;
+      left: 20px;
+    }
+
+    .menu {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      border: none;
+      background: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: '\e900';
+        font-family: 'Icomoon';
+        color: white;
+        font-size: 30px;
+      }
+    }
+
+    .menu-close {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      border: none;
+      background: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: '\e907';
+        font-family: 'Icomoon';
+        color: white;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .mobile-main {
+    @media screen and (min-width: 901px){
+      display: none;
+    }
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222222;
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 54px;
+    height: 100vh;
+    transition: all 0.3s ease-in;
+
+    li {
+      padding: 10px 0;
+    }
+    a {
+      color: white;
+    }
+  }
+
+  .mobile-open {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222222;
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 54px;
+    left: 0;
+    transition: all 0.3s ease-in;
+
+    li {
+      padding: 10px 0;
+    }
+    a {
+      color: white;
+    }
   }
 }
