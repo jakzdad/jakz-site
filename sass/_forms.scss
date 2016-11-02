@@ -1,9 +1,10 @@
 @mixin form-reset {
   input {
     padding: 10px 10px;
-    border: none;
+    border: 1px solid transparent;
     font-size: 14px;
     width: 200px;
+    border-radius: 0px;
 
     &:focus {
       outline: none;
@@ -28,6 +29,7 @@
   .submit-btn {
     @include button-reset($h1);
     margin: 0 !important;
+
   }
 }
 

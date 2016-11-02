@@ -1,5 +1,6 @@
 @mixin button-reset($color){
-  border: none;
+  border: 1px solid $color;
+  border-radius: 0px;
   background: $color;
   padding: 10px 40px;
   margin: 5px;

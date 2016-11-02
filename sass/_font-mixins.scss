@@ -2,11 +2,11 @@ $font: 'Lato', sans-serif;
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?13mc1j');
-  src:  url('fonts/icomoon.eot?13mc1j#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?13mc1j') format('truetype'),
-    url('fonts/icomoon.woff?13mc1j') format('woff'),
-    url('fonts/icomoon.svg?13mc1j#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?13mc1j');
+  src:  url('../fonts/icomoon.eot?13mc1j#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?13mc1j') format('truetype'),
+    url('../fonts/icomoon.woff?13mc1j') format('woff'),
+    url('../fonts/icomoon.svg?13mc1j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
