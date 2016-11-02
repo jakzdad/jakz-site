@@ -12,6 +12,10 @@
   }
 }
 
+input, textarea, select { -webkit-appearance: none; border-radius: 0; -webkit-border-radius:0; }
+* { -webkit-tap-highlight-color:transparent; }
+div, a, section, article, span, img, h1, h2, h3, h4, h5 ,h6 { -webkit-user-select:none; -moz-user-select:none; }
+
 .newsletter-signup {
   input.email {
     padding: 10px 10px !important;
@@ -29,6 +33,7 @@
   .submit-btn {
     @include button-reset($h1);
     margin: 0 !important;
+    appearance: none;
 
   }
 }

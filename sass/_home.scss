@@ -134,6 +134,8 @@
   background-attachment: fixed;
   position: relative;
 
+
+
   &:before {
     content: '';
     width: 100%;
@@ -206,6 +208,10 @@
   background-attachment: fixed;
   position: relative;
   padding: 230px;
+
+  @media screen and (max-width: 900px ) {
+    background-attachment: none;
+  }
 
   @media screen and (max-width: 550px ) {
     padding: 100px 20px;
@@ -517,6 +523,10 @@
 
   p{
    text-align: center;
+  }
+
+  a {
+    color: $h1;
   }
 
 }
