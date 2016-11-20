@@ -515,7 +515,6 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 100vh;
   width: 100%;
   position: relative; }
   @media screen and (max-width: 600px) {
@@ -551,6 +550,14 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5, h6 {
         @media screen and (max-width: 450px) {
           .hero-container .intro-content .tagline h1 {
             font-size: 45px; } }
+  .hero-container .feature-video {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; }
+    @media screen and (max-width: 700px) {
+      .hero-container .feature-video iframe {
+        width: 90vw;
+        height: 30vh; } }
   .hero-container .form-content {
     position: relative;
     z-index: 2;
@@ -761,8 +768,13 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5, h6 {
     .lex-container .lex-content .lex-gallery {
       display: flex;
       justify-content: space-between;
-      padding: 40px 0;
-      flex-wrap: wrap; }
+      padding: 40px 0; }
+      @media screen and (max-width: 1100px) {
+        .lex-container .lex-content .lex-gallery {
+          flex-wrap: wrap; } }
+      @media screen and (max-width: 1000px) {
+        .lex-container .lex-content .lex-gallery {
+          justify-content: center; } }
       @media screen and (max-width: 550px) {
         .lex-container .lex-content .lex-gallery {
           justify-content: center; } }
@@ -846,8 +858,13 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5, h6 {
     .jackdavid-container .jackdavid-content .jackdavid-gallery {
       display: flex;
       justify-content: space-between;
-      padding: 40px 0;
-      flex-wrap: wrap; }
+      padding: 40px 0; }
+      @media screen and (max-width: 1100px) {
+        .jackdavid-container .jackdavid-content .jackdavid-gallery {
+          flex-wrap: wrap; } }
+      @media screen and (max-width: 1000px) {
+        .jackdavid-container .jackdavid-content .jackdavid-gallery {
+          justify-content: center; } }
       @media screen and (max-width: 550px) {
         .jackdavid-container .jackdavid-content .jackdavid-gallery {
           justify-content: center; } }
