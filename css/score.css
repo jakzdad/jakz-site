@@ -1,0 +1,91 @@
+.score {
+  position: relative;
+  width: 300px;
+  height: 300px; }
+  .score .diamond {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .score .base {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    opacity: 0; }
+    .score .base.first {
+      top: 140px;
+      right: 50px; }
+    .score .base.second {
+      top: 50px;
+      right: 142px; }
+    .score .base.third {
+      top: 140px;
+      left: 50px; }
+    .score .base.home {
+      width: 100px;
+      height: 100px;
+      top: 107px;
+      right: 100px;
+      background: red;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px; }
+  .score .hit {
+    opacity: 1; }
+
+.selections {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  position: relative;
+  z-index: 2; }
+  .selections button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black; }
+    .selections button:hover {
+      border: 2px solid black; }
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px; }
+  .options button {
+    width: 93%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black; }
+    .options button:hover {
+      border: 2px solid black; }
+
+.hit-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  position: absolute;
+  background: white;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-100%); }
+  .hit-buttons button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black; }
+    .hit-buttons button:hover {
+      border: 2px solid black; }
+
+.hit-buttons-show {
+  opacity: 1;
+  transform: translateY(-100%); }
+
+/*# sourceMappingURL=score.css.map */

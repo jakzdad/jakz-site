@@ -1,0 +1,117 @@
+.score {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  .diamond {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .base {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    opacity: 0;
+
+    &.first {
+      top: 140px;
+      right: 50px;
+    }
+
+    &.second {
+      top: 50px;
+      right: 142px;
+    }
+
+    &.third {
+      top: 140px;
+      left: 50px;
+    }
+
+    &.home {
+      width: 100px;
+      height: 100px;
+      top: 107px;
+      right: 100px;
+      background: red;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px;
+    }
+  }
+
+  .hit {
+    opacity: 1;
+  }
+}
+
+.selections {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  position: relative;
+  z-index: 2;
+
+  button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    &:hover {
+      border: 2px solid black;
+    }
+  }
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+
+  button {
+    width: 93%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    &:hover {
+      border: 2px solid black;
+    }
+  }
+}
+
+.hit-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  position: absolute;
+  background: white;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-100%);
+
+
+  button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    &:hover {
+      border: 2px solid black;
+    }
+  }
+}
+
+.hit-buttons-show {
+  opacity: 1;
+  transform: translateY(-100%);
+}

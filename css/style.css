@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  height: 100%; }
+  body h1 {
+    font-size: 42px;
+    line-height: 44px;
+    color: #212121; }
+  body h2 {
+    font-size: 38px;
+    line-height: 40px;
+    color: #212121; }
+  body h3 {
+    font-size: 34px;
+    line-height: 36px;
+    color: #212121; }
+  body h4 {
+    font-size: 30px;
+    line-height: 32px;
+    color: #212121; }
+  body h5 {
+    font-size: 26px;
+    line-height: 28px;
+    color: #212121; }
+  body h6 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #212121; }
+  body p {
+    color: #616161;
+    font-size: 20px; }
+  body a {
+    font-size: 20px; }
+
+.score {
+  position: relative;
+  width: 300px;
+  height: 300px; }
+  .score .diamond {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .score .base {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    opacity: 0; }
+    .score .base.first {
+      top: 140px;
+      right: 50px; }
+    .score .base.second {
+      top: 50px;
+      right: 142px; }
+    .score .base.third {
+      top: 140px;
+      left: 50px; }
+    .score .base.home {
+      width: 100px;
+      height: 100px;
+      top: 107px;
+      right: 100px;
+      background: red;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px; }
+  .score .hit {
+    opacity: 1; }
+
+.selections {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  position: relative;
+  z-index: 2; }
+  .selections button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black; }
+    .selections button:hover {
+      border: 2px solid black; }
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px; }
+  .options button {
+    width: 93%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black; }
+    .options button:hover {
+      border: 2px solid black; }
+
+.hit-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  position: absolute;
+  background: white;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-100%); }
+  .hit-buttons button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black; }
+    .hit-buttons button:hover {
+      border: 2px solid black; }
+
+.hit-buttons-show {
+  opacity: 1;
+  transform: translateY(-100%); }
+
+/*# sourceMappingURL=style.css.map */
