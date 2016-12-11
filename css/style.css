@@ -34,6 +34,9 @@ body {
   body a {
     font-size: 20px; }
 
+button:focus {
+  outline: none; }
+
 .score {
   position: relative;
   width: 300px;
