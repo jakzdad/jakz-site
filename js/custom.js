@@ -104,14 +104,18 @@ $('.selection-advance').click(function(e){
   nextBase.addClass('hit');
 
   if (nextBase.is($('.home'))) {
-    $('.selection-advance').addClass('scored');
+    $('.selection-score').css('display', 'block');
+    $('.selection-advance').hide();
   }
 
-  if ($(event.target).hasClass('scored')) {
-    console.log('tits');
-    points = points + 1;
-    $('.point input').val(points);
-    $('.selection-advance').removeClass('scored');
-  }
+});
+
+$('.selection-score').click(function(){
+  points++;
+  $('.point input').val(points);
+  $('.selection-score').css('display', 'none');
+  $('.selection-advance').show();
+  $('.score .base').removeClass('hit');
+
 
 });

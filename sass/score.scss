@@ -69,6 +69,13 @@
   }
 }
 
+.selection-score {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
 .options {
   display: flex;
   flex-wrap: wrap;
