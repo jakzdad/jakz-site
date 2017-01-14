@@ -1,3 +1,16 @@
+// Site Color
+// ===============
+
+//text color (sitewide)
+$d1: #212121;
+$d2: #616161;
+$d3: #fff;
+
+// Main Color
+$m1: #de2127;
+$m2: #838384;
+
+
 html {
   height: 100%;
   width: 100%;
@@ -5,35 +18,33 @@ html {
 
 body {
   height: 100%;
+  font-family: 'Droid Sans', sans-serif;
+
 
   h1 {
     @include h1;
-    color: $d1;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   h2 {
     @include h2;
-    color: $d1;
   }
 
   h3 {
     @include h3;
-    color: $d1;
   }
 
   h4 {
     @include h4;
-    color: $d1;
   }
 
   h5 {
     @include h5;
-    color: $d1;
   }
 
   h6 {
     @include h6;
-    color: $d1;
   }
 
   p {
@@ -43,5 +54,6 @@ body {
 
   a {
     font-size: 20px;
+    color: $m1;
   }
 }
