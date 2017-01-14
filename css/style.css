@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  height: 100%;
+  font-family: 'Droid Sans', sans-serif; }
+  body h1 {
+    font-size: 42px;
+    line-height: 44px;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 20px; }
+  body h2 {
+    font-size: 38px;
+    line-height: 40px;
+    color: #212121; }
+  body h3 {
+    font-size: 34px;
+    line-height: 36px;
+    color: #212121; }
+  body h4 {
+    font-size: 30px;
+    line-height: 32px;
+    color: #212121; }
+  body h5 {
+    font-size: 26px;
+    line-height: 28px;
+    color: #212121; }
+  body h6 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #212121; }
+  body p {
+    color: #616161;
+    font-size: 20px; }
+  body a {
+    font-size: 20px;
+    color: #de2127; }
+
+.la-menu {
+  background: #838384;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  left: -300px;
+  transition: left 0.3s ease-in;
+  z-index: 9999; }
+  .la-menu.active {
+    left: 0;
+    transition: left 0.3s ease-out; }
+
+.drawer-trigger {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 20px; }
+  .drawer-trigger:focus {
+    outline: none; }
+  .drawer-trigger:before {
+    content: '\e901';
+    font-family: 'icomoon';
+    font-size: 40px;
+    color: rgba(131, 131, 132, 0.5); }
+
+.close-trigger {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 250px; }
+  .close-trigger:focus {
+    outline: none; }
+  .close-trigger:before {
+    content: '\e900';
+    font-family: 'icomoon';
+    font-size: 40px;
+    color: #fff; }
+
+.la-container {
+  height: 100vh; }
+  .la-container.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .la-container.splash img {
+      margin: 10px 0; }
+      .la-container.splash img.logo-text {
+        width: 300px; }
+      .la-container.splash img.lightning-bolts {
+        width: 150px; }
+      .la-container.splash img.splash-type {
+        width: 300px;
+        margin-top: 80px; }
+    .la-container.splash a {
+      position: absolute;
+      bottom: 20px; }
+      .la-container.splash a .badge-logo {
+        width: 70px; }
+
+/*# sourceMappingURL=style.css.map */

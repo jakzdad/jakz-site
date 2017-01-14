@@ -1,0 +1,65 @@
+// Headings
+// ================
+@mixin h1 {
+  font-size: 42px;
+  line-height: 44px;
+  color: $d1;
+}
+
+@mixin h2 {
+  font-size: 38px;
+  line-height: 40px;
+  color: $d1;
+}
+
+@mixin h3 {
+  font-size: 34px;
+  line-height: 36px;
+  color: $d1;
+}
+
+@mixin h4 {
+  font-size: 30px;
+  line-height: 32px;
+  color: $d1;
+}
+
+@mixin h5 {
+  font-size: 26px;
+  line-height: 28px;
+  color: $d1;
+}
+
+@mixin h6 {
+  font-size: 22px;
+  line-height: 24px;
+  color: $d1;
+}
+
+//Font Icons
+// =================
+
+@mixin icon-menu ($size) {
+  content: '\e901';
+  font-family: 'icomoon';
+  font-size: $size;
+}
+
+@mixin icon-close ($size) {
+  content: '\e900';
+  font-family: 'icomoon';
+  font-size: $size;
+}
+
+
+//Button Reset
+// =================
+
+@mixin button-reset {
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}

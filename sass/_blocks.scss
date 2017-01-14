@@ -1,0 +1,38 @@
+.la-container {
+  height: 100vh;
+
+  //Splash Page
+  &.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 10px 0;
+
+      &.logo-text {
+        width: 300px;
+      }
+
+      &.lightning-bolts {
+        width: 150px;
+      }
+
+      &.splash-type {
+        width: 300px;
+        margin-top: 80px;
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 20px;
+
+      .badge-logo {
+          width: 70px;
+      }
+    }
+
+  }//end splash page
+}

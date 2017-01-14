@@ -1,0 +1,41 @@
+.la-menu {
+  background: $m2;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  left: -300px;
+  transition: left 0.3s ease-in;
+  z-index: 9999;
+
+  &.active {
+    left: 0;
+    transition: left 0.3s ease-out;
+
+  }
+
+}
+
+
+
+// Menu Trigger
+.drawer-trigger {
+  @include button-reset;
+  position: absolute;
+  left: 20px;
+
+  &:before {
+    @include icon-menu (40px);
+    color: rgba($m2, 0.5);
+  }
+}
+
+.close-trigger {
+  @include button-reset;
+  position: absolute;
+  left: 250px;
+
+  &:before {
+    @include icon-close (40px);
+    color: #fff;
+  }
+}
