@@ -52,10 +52,6 @@ lucentApp.controller('splashController', ['$scope', '$location', function($scope
   $scope.page = 'Splash';
 }]);
 
-lucentApp.controller('homeController', ['$scope', '$location', function($scope, $location){
-  $scope.page = 'Home';
-}]);
-
 lucentApp.controller('aboutController', ['$scope', function($scope){
   $scope.page = 'About';
 }]);

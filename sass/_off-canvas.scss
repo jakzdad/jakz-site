@@ -1,23 +1,94 @@
+// Off Canvas Drawer
+// ==================
 .la-menu {
   background: $m2;
-  height: 100%;
+  height: 100vh;
   width: 300px;
   position: fixed;
   left: -300px;
   transition: left 0.3s ease-in;
   z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mediaMax ($phablet) {
+    width: 100%;
+    left: -100%;
+  }
 
   &.active {
     left: 0;
     transition: left 0.3s ease-out;
-
   }
+}
 
+// Main Menu
+// ================
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  li {
+    padding: 10px 0;
+    width: 70%;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        text-decoration: none;
+        color: $m1;
+      }
+    }
+  }
+}
+
+.social-nav {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  width: 50%;
+  align-self: center;
+  justify-content: center;
+
+  li {
+    padding: 10px;
+
+    a {
+      color: $d1;
+      font-size: 0px;
+
+      &[href*='facebook']:before {
+        @include icon-facebook (30px);
+      }
+
+      &[href*='twitter']:before {
+        @include icon-twitter (30px);
+      }
+
+      &[href*='instagram']:before {
+        @include icon-instagram (30px);
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
 }
 
 
 
 // Menu Trigger
+// ===================
 .drawer-trigger {
   @include button-reset;
   position: absolute;
@@ -33,6 +104,7 @@
   @include button-reset;
   position: absolute;
   left: 250px;
+  top: 10px;
 
   &:before {
     @include icon-close (40px);

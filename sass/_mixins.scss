@@ -1,39 +1,45 @@
 // Headings
 // ================
 @mixin h1 {
+  color: $d1;
+
   font-size: 42px;
   line-height: 44px;
-  color: $d1;
 }
 
 @mixin h2 {
+  color: $d1;
+
   font-size: 38px;
   line-height: 40px;
-  color: $d1;
 }
 
 @mixin h3 {
+  color: $d1;
+
   font-size: 34px;
   line-height: 36px;
-  color: $d1;
 }
 
 @mixin h4 {
+  color: $d1;
+
   font-size: 30px;
   line-height: 32px;
-  color: $d1;
 }
 
 @mixin h5 {
+  color: $d1;
+
   font-size: 26px;
   line-height: 28px;
-  color: $d1;
 }
 
 @mixin h6 {
+  color: $d1;
+
   font-size: 22px;
   line-height: 24px;
-  color: $d1;
 }
 
 //Font Icons
@@ -41,25 +47,71 @@
 
 @mixin icon-menu ($size) {
   content: '\e901';
+
   font-family: 'icomoon';
   font-size: $size;
 }
 
 @mixin icon-close ($size) {
   content: '\e900';
+
   font-family: 'icomoon';
   font-size: $size;
 }
+
+@mixin icon-facebook ($size) {
+  content: '\e904';
+
+  font-family: 'icomoon';
+  font-size: $size;
+}
+
+@mixin icon-twitter ($size) {
+  content: '\e903';
+
+  font-family: 'icomoon';
+  font-size: $size;
+}
+
+@mixin icon-instagram ($size) {
+  content: '\e902';
+
+  font-family: 'icomoon';
+  font-size: $size;
+}
+
 
 
 //Button Reset
 // =================
 
 @mixin button-reset {
-  background: none;
   border: none;
+  background: none;
 
   &:focus {
     outline: none;
+  }
+}
+
+// Media Queries
+// =================
+$flippers: 400px;
+$mobile: 500px;
+$phablet: 600px;
+$tablet: 768px;
+$bigger-tablet: 900px;
+$desktop-width: 1024;
+$max-desktop: 1280px;
+
+@mixin mediaMax ($window) {
+  @media (max-width: #{$window - 1px}) {
+    @content;
+  }
+}
+
+@mixin mediaMin ($window) {
+  @media (min-width: #{$window}) {
+    @content;
   }
 }
