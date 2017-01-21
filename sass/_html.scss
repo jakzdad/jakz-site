@@ -68,6 +68,11 @@ p {
 a {
   font-size: 20px;
   color: $m1;
+
+  &:hover {
+    color: $m2;
+    text-decoration: none;
+  }
 }
 
 img {

@@ -59,8 +59,8 @@ $badge-width: 60px;
 
   &.products {
     .main-section {
-      img {
 
+      img {
         &.logo-text {
           width: 100%;
           max-width: 300px;
@@ -70,12 +70,73 @@ $badge-width: 60px;
           width: 100%;
           max-width: 150px;
         }
+      }//end image
 
+      .product-container {
+        width: 100%;
+        max-width: 980px;
+        margin: 20px auto;
       }
+
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // justify-content: space-around;
+
+
+        .item-container {
+          flex-basis: 300px;
+          width: 30%;
+          height: auto;
+          background: #eee;
+          margin: 10px;
+          padding: 20px;
+          text-align: center;
+
+          img {
+            width: 150px;
+          }
+
+          &:hover {
+            background: #e0e0e0;
+
+            img {
+              width: 170px;
+            }
+          }
+
+
+        }
+      }
+
 
     }//end main-section
   }//edn product page
 
+  // Contact Page
+  // ===============
+  &.contact {
+    .main-section {
+
+      img {
+        &.logo-text {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        &.lightning-bolts {
+          width: 100%;
+          max-width: 150px;
+        }
+      }//end image
+
+      .contact-link {
+        margin: 20px 0;
+        text-align: center;
+      }
+    }//end main-section
+  }
 
 
 }//edn content-container

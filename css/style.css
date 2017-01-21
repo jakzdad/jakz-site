@@ -64,6 +64,9 @@ p {
 a {
   font-size: 20px;
   color: #de2127; }
+  a:hover {
+    color: #838384;
+    text-decoration: none; }
 
 img {
   display: block;
@@ -189,5 +192,36 @@ img {
 .content-container.products .main-section img.lightning-bolts {
   width: 100%;
   max-width: 150px; }
+.content-container.products .main-section .product-container {
+  width: 100%;
+  max-width: 980px;
+  margin: 20px auto; }
+.content-container.products .main-section .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .content-container.products .main-section .product-grid .item-container {
+    flex-basis: 300px;
+    width: 30%;
+    height: auto;
+    background: #eee;
+    margin: 10px;
+    padding: 20px;
+    text-align: center; }
+    .content-container.products .main-section .product-grid .item-container img {
+      width: 150px; }
+    .content-container.products .main-section .product-grid .item-container:hover {
+      background: #e0e0e0; }
+      .content-container.products .main-section .product-grid .item-container:hover img {
+        width: 170px; }
+.content-container.contact .main-section img.logo-text {
+  width: 100%;
+  max-width: 300px; }
+.content-container.contact .main-section img.lightning-bolts {
+  width: 100%;
+  max-width: 150px; }
+.content-container.contact .main-section .contact-link {
+  margin: 20px 0;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

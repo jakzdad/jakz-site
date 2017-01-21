@@ -61,5 +61,48 @@ lucentApp.controller('contactController', ['$scope', function($scope){
 }]);
 
 lucentApp.controller('productsController', ['$scope', function($scope){
-  $scope.page = 'Products';
+
+  $scope.items = [
+    {
+      product: 'Connecticut Tee',
+      price: 22,
+      image: 'images/tshirt.svg',
+      url: 'products/connecticut-tee.html'
+    },
+    {
+      product: 'Tiger Tee',
+      price: 23,
+      image: 'images/tshirt.svg',
+      url: 'products/tiger-tee.html'
+
+    },
+    {
+      product: 'Wolves Tee',
+      price: 22,
+      image: 'images/tshirt.svg',
+      url: 'products/wolves-tee.html'
+
+    },
+    {
+      product: 'Rockstar Tee',
+      price: 21,
+      image: 'images/tshirt.svg',
+      url: 'products/rockstar-tee.html'
+
+    },
+    {
+      product: 'Up Past Midnight Tee',
+      price: 22,
+      image: 'images/tshirt.svg',
+      url: 'products/up-past-midnight-tee.html'
+
+    },
+    {
+      product: 'This Tee',
+      price: 25,
+      image: 'images/tshirt.svg',
+      url: 'products/this-tee.html'
+
+    }
+  ]
 }]);

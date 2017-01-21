@@ -6,11 +6,21 @@
     <img src="images/logo-type.svg" alt="lucent designs logo text" class="logo-text">
     <img src="images/bolts.svg" alt="lucent logo lightning bolts" class="lightning-bolts">
 
-    <p>Lo-fi bitters pok pok selfies live-edge, whatever quinoa pitchfork hella irony. Viral leggings hashtag synth. Glossier single-origin coffee slow-carb iPhone, cold-pressed paleo trust fund farm-to-table photo booth meditation. Hella swag copper mug meh trust fund gluten-free lomo. Fanny pack irony waistcoat neutra mustache. Skateboard gochujang fanny pack godard single-origin coffee, celiac la croix knausgaard normcore prism semiotics post-ironic. +1 hexagon tacos unicorn.</p>
 
-    <p>Lo-fi bitters pok pok selfies live-edge, whatever quinoa pitchfork hella irony. Viral leggings hashtag synth. Glossier single-origin coffee slow-carb iPhone, cold-pressed paleo trust fund farm-to-table photo booth meditation. Hella swag copper mug meh trust fund gluten-free lomo. Fanny pack irony waistcoat neutra mustache. Skateboard gochujang fanny pack godard single-origin coffee, celiac la croix knausgaard normcore prism semiotics post-ironic. +1 hexagon tacos unicorn.</p>
+    <div class="product-container">
+      <div class="product-grid">
 
-    <p>Lo-fi bitters pok pok selfies live-edge, whatever quinoa pitchfork hella irony. Viral leggings hashtag synth. Glossier single-origin coffee slow-carb iPhone, cold-pressed paleo trust fund farm-to-table photo booth meditation. Hella swag copper mug meh trust fund gluten-free lomo. Fanny pack irony waistcoat neutra mustache. Skateboard gochujang fanny pack godard single-origin coffee, celiac la croix knausgaard normcore prism semiotics post-ironic. +1 hexagon tacos unicorn.</p>
+        <a ng-href="#/{{ item.url }}" class="item-container" ng-repeat="item in items">
+          <img ng-src="{{ item.image }}" class="product-image" alt="demo-item">
+          <h6 class="product-name">{{ item.product }}</h6>
+          <p class="price">{{ item.price | currency }}</p>
+        </a>
+
+
+      </div>
+
+    </div>
+
   </div>
 
 </div>
