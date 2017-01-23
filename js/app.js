@@ -103,6 +103,26 @@ lucentApp.controller('productsController', ['$scope', function($scope){
       image: 'images/tshirt.svg',
       url: 'products/this-tee.html'
 
+    },
+    {
+      product: 'Connecticut Tee',
+      price: 22,
+      image: 'images/tshirt.svg',
+      url: 'products/connecticut-tee.html'
+    },
+    {
+      product: 'Tiger Tee',
+      price: 23,
+      image: 'images/tshirt.svg',
+      url: 'products/tiger-tee.html'
+
+    },
+    {
+      product: 'Wolves Tee',
+      price: 22,
+      image: 'images/tshirt.svg',
+      url: 'products/wolves-tee.html'
+
     }
   ]
 }]);

@@ -95,7 +95,7 @@ $badge-width: 60px;
           text-align: center;
 
           img {
-            width: 150px;
+            width: 200px;
           }
 
           &:hover {
@@ -104,6 +104,12 @@ $badge-width: 60px;
             img {
               width: 170px;
             }
+          }
+
+          &:before {
+            content: '';
+            background: rgab(0,0,0, 0.3);
+
           }
 
 
