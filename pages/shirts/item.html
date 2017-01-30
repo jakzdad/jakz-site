@@ -1,0 +1,34 @@
+<div class="content-container product-details" >
+
+  <!-- main content section -->
+  <div class="main-section">
+
+    <img src="images/logo-type.svg" alt="lucent designs logo text" class="logo-text">
+    <img src="images/bolts.svg" alt="lucent logo lightning bolts" class="lightning-bolts">
+
+
+    <div class="product-container">
+      <div class="product-grid">
+
+        <div class="item-container">
+          <div class="item-pictures">
+            <div class="detail-image" ng-repeat="image in items[selectedShirt].gallery">
+              <img ng-src="{{ image.imagePath }}"  class="product-image" alt="demo-item">
+            </div>
+          </div>
+          <h6 class="product-name">{{ items[selectedShirt].product }}</h6>
+          <p class="price">{{ items[selectedShirt].price | currency }}</p>
+          <p class="description">{{ items[selectedShirt].description}}</p>
+          <p class="product-sizes">{{ items[selectedShirt].availableSizes }}</p>
+          <button class="buy-button">Buy Now</button>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
