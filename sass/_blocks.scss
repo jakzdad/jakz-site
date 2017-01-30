@@ -118,7 +118,64 @@ $badge-width: 60px;
 
 
     }//end main-section
-  }//edn product page
+  }//end product page
+
+  // Details Page
+  // ===============
+  &.product-details {
+    .main-section {
+
+      img {
+        &.logo-text {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        &.lightning-bolts {
+          width: 100%;
+          max-width: 150px;
+        }
+      }//end image
+
+      .product-container {
+        width: 100%;
+        max-width: 980px;
+        margin: 20px auto;
+      }
+
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // justify-content: space-around;
+
+
+        .item-container {
+          flex-basis: 300px;
+          width: 30%;
+          height: auto;
+          background: transparent;
+          margin: 10px;
+          padding: 20px;
+          text-align: center;
+
+          img {
+            width: 200px;
+          }
+
+          &:before {
+            content: '';
+            background: rgab(0,0,0, 0.3);
+
+          }
+
+
+        }
+      }
+
+
+    }//end main-section
+  }//end product-details
 
   // Contact Page
   // ===============

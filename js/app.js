@@ -31,6 +31,11 @@ lucentApp.config(['$routeProvider', '$locationProvider', function($routeProvider
     controller: 'productsController'
   })
 
+  .when('/products/:item', {
+    templateUrl: 'pages/shirts/item.html',
+    controller: 'itemController'
+  })
+
   .otherwise({
       redirectTo : '/'
   });
@@ -103,26 +108,72 @@ lucentApp.controller('productsController', ['$scope', function($scope){
       image: 'images/tshirt.svg',
       url: 'products/this-tee.html'
 
-    },
+    }
+  ]
+}]);
+
+lucentApp.controller('itemController', ['$scope', '$routeParams', function($scope, $routeParams){
+  $scope.page = 'Item';
+  $scope.selectedShirt = $routeParams.item;
+  $scope.items = [
     {
       product: 'Connecticut Tee',
       price: 22,
       image: 'images/tshirt.svg',
-      url: 'products/connecticut-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      gallery: [
+        {
+          imagePath: 'images/tshirt.svg'
+        },
+        {
+          imagePath: 'images/tshirt1.svg'
+        },
+        {
+          imagePath: 'images/tshirt2.svg'
+        }
+      ]
     },
     {
       product: 'Tiger Tee',
       price: 23,
       image: 'images/tshirt.svg',
-      url: 'products/tiger-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL'
 
     },
     {
       product: 'Wolves Tee',
       price: 22,
       image: 'images/tshirt.svg',
-      url: 'products/wolves-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL'
+
+    },
+    {
+      product: 'Rockstar Tee',
+      price: 21,
+      image: 'images/tshirt.svg',
+      description: 'put description here',
+      availableSizes: 'XS S M L XL'
+
+    },
+    {
+      product: 'Up Past Midnight Tee',
+      price: 22,
+      image: 'images/tshirt.svg',
+      description: 'put description here',
+      availableSizes: 'XS S M L XL'
+
+    },
+    {
+      product: 'This Tee',
+      price: 25,
+      image: 'images/tshirt.svg',
+      description: 'put description here',
+      availableSizes: 'XS S M L XL'
 
     }
   ]
+
 }]);

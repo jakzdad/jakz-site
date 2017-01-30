@@ -9,8 +9,8 @@
 
     <div class="product-container">
       <div class="product-grid">
-
-        <a ng-href="#/{{ item.url }}" class="item-container" ng-repeat="item in items">
+        
+        <a ng-href="#/products/{{ items.indexOf(item) }}" class="item-container" ng-repeat="item in items">
           <img ng-src="{{ item.image }}" class="product-image" alt="demo-item">
           <h6 class="product-name">{{ item.product }}</h6>
           <p class="price">{{ item.price | currency }}</p>
