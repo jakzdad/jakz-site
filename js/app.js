@@ -1,4 +1,4 @@
-var lucentApp = angular.module('lucentApp', ['ngRoute', 'ngResource']);
+var lucentApp = angular.module('lucentApp', ['ngRoute', 'ngResource', 'slickCarousel', 'ngAnimate']);
 
 // Routes
 // ================
@@ -70,7 +70,7 @@ lucentApp.controller('productsController', ['$scope', function($scope){
   $scope.items = [
     {
       product: 'Connecticut Tee',
-      price: 22,
+      price: 23,
       image: 'images/tshirt.svg',
       url: 'products/connecticut-tee.html'
     },
@@ -112,7 +112,7 @@ lucentApp.controller('productsController', ['$scope', function($scope){
   ]
 }]);
 
-lucentApp.controller('itemController', ['$scope', '$routeParams', function($scope, $routeParams){
+lucentApp.controller('itemController', ['$scope', '$routeParams', '$timeout', function($scope, $routeParams, $timeout){
   $scope.page = 'Item';
   $scope.selectedShirt = $routeParams.item;
   $scope.items = [
@@ -175,5 +175,23 @@ lucentApp.controller('itemController', ['$scope', '$routeParams', function($scop
 
     }
   ]
+
+    $scope.setSlick = true;
+
+    $scope.slickConfig = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      autoplay: false,
+      dots: true,
+      arrows: true,
+      method: {},
+      event: {
+          beforeChange: function (event, slick, currentSlide, nextSlide) {
+          },
+          afterChange: function (event, slick, currentSlide, nextSlide) {
+          }
+      }
+    };
 
 }]);

@@ -11,11 +11,16 @@
       <div class="product-grid">
 
         <div class="item-container">
-          <div class="item-pictures">
+          <slick settings="slickConfig" ng-if="setSlick" class="item-pictures">
             <div class="detail-image" ng-repeat="image in items[selectedShirt].gallery">
               <img ng-src="{{ image.imagePath }}"  class="product-image" alt="demo-item">
             </div>
-          </div>
+          </slick>
+          <!-- <div ng-if="!setSlick" class="item-pictures">
+            <div class="detail-image" ng-repeat="image in items[selectedShirt].gallery">
+              <img ng-src="{{ image.imagePath }}"  class="product-image" alt="demo-item">
+            </div>
+          </div> -->
           <h6 class="product-name">{{ items[selectedShirt].product }}</h6>
           <p class="price">{{ items[selectedShirt].price | currency }}</p>
           <p class="description">{{ items[selectedShirt].description}}</p>

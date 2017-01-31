@@ -38,6 +38,9 @@ $badge-width: 60px;
   // About Page
   // ===============
   &.about {
+    &.ng-enter {
+      animation: scaleUp 0.5s both ease-in; 
+    }
     .main-section {
 
       .logo-text {
@@ -83,7 +86,6 @@ $badge-width: 60px;
         flex-wrap: wrap;
         justify-content: center;
         // justify-content: space-around;
-
 
         .item-container {
           flex-basis: 300px;
@@ -149,9 +151,8 @@ $badge-width: 60px;
         justify-content: center;
         // justify-content: space-around;
 
-
         .item-container {
-          flex-basis: 300px;
+          flex-basis: 500px;
           width: 30%;
           height: auto;
           background: transparent;
@@ -160,7 +161,7 @@ $badge-width: 60px;
           text-align: center;
 
           img {
-            width: 200px;
+            width: 100%;
           }
 
           &:before {
