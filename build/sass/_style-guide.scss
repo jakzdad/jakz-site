@@ -1,0 +1,97 @@
+.color-pallette {
+  margin: 40px 0;
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      width: 65px;
+      height: 60px;
+      background: black;
+      border-radius: 2px;
+      margin: 10px;
+      position: relative;
+
+      span {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &.green {
+        background: $green;
+
+        span:before {
+          content: "#{$green}";
+          color: $green;
+        }
+      }
+      &.darkgreen {
+        background: $darkgreen;
+        span:before {
+          content: "#{$darkgreen}";
+          color: $darkgreen;
+        }
+      }
+      &.blue {
+        background: $blue;
+        span:before {
+          content: "#{$blue}";
+          color: $blue;
+        }
+      }
+      &.darkblue {
+        background: $darkblue;
+        span:before {
+          content: "#{$darkblue}";
+          color: $darkblue;
+        }
+      }
+      &.orange {
+        background: $orange;
+        span:before {
+          content: "#{$orange}";
+          color: $orange;
+        }
+      }
+      &.rust {
+        background: $rust;
+        span:before {
+          content: "#{$rust}";
+          color: $rust;
+        }
+      }
+    }
+  }
+}
+
+//Callout Buttons
+@mixin button($color) {
+  border: 1px solid $color;
+  font-weight: 100;
+  margin: 1px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: $color;
+
+
+  &:hover {
+    border: 2px solid $color;
+    color: $color;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.green-button {
+  @include button($green);
+}
+
+.blue-button {
+  @include button($blue);
+}
+
+.orange-button {
+  @include button($orange);
+}
