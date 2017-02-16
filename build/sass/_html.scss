@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  color: blue;
+}
+
+//Font Sizing
+//====================
+h1 {
+  color: $d1;
+  font-size: 42px;
+  line-height: 44px;
+}
+
+h2 {
+  color: $d1;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+h3 {
+  color: $d1;
+  font-size: 34px;
+  line-height: 36px;
+}
+
+h4 {
+  color: $d1;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+h5 {
+  color: $d1;
+  font-size: 26px;
+  line-height: 28px;
+}
+
+h6 {
+  color: $d1;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+p {
+  color: $d2;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+a {
+  color: $d1;
+  font-size: 16px;
+  line-height: 18px;
+}
