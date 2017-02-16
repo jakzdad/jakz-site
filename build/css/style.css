@@ -1,47 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Ubuntu:400,700");
+.color-pallette {
+  margin: 40px 0; }
+  .color-pallette ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+    .color-pallette ul li {
+      width: 65px;
+      height: 60px;
+      background: black;
+      border-radius: 2px;
+      margin: 10px;
+      position: relative; }
+      .color-pallette ul li span {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+      .color-pallette ul li.green {
+        background: #8dc63f; }
+        .color-pallette ul li.green span:before {
+          content: "#8dc63f";
+          color: #8dc63f; }
+      .color-pallette ul li.darkgreen {
+        background: #006838; }
+        .color-pallette ul li.darkgreen span:before {
+          content: "#006838";
+          color: #006838; }
+      .color-pallette ul li.blue {
+        background: #2ab3ff; }
+        .color-pallette ul li.blue span:before {
+          content: "#2ab3ff";
+          color: #2ab3ff; }
+      .color-pallette ul li.darkblue {
+        background: #155987; }
+        .color-pallette ul li.darkblue span:before {
+          content: "#155987";
+          color: #155987; }
+      .color-pallette ul li.orange {
+        background: #fc8300; }
+        .color-pallette ul li.orange span:before {
+          content: "#fc8300";
+          color: #fc8300; }
+      .color-pallette ul li.rust {
+        background: #8e3816; }
+        .color-pallette ul li.rust span:before {
+          content: "#8e3816";
+          color: #8e3816; }
+
+.green-button {
+  border: 1px solid #8dc63f;
+  font-weight: 100;
+  margin: 1px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #8dc63f; }
+  .green-button:hover {
+    border: 2px solid #8dc63f;
+    color: #8dc63f;
+    font-weight: 400;
+    margin: 0; }
+
+.blue-button {
+  border: 1px solid #2ab3ff;
+  font-weight: 100;
+  margin: 1px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #2ab3ff; }
+  .blue-button:hover {
+    border: 2px solid #2ab3ff;
+    color: #2ab3ff;
+    font-weight: 400;
+    margin: 0; }
+
+.orange-button {
+  border: 1px solid #fc8300;
+  font-weight: 100;
+  margin: 1px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fc8300; }
+  .orange-button:hover {
+    border: 2px solid #fc8300;
+    color: #fc8300;
+    font-weight: 400;
+    margin: 0; }
+
 html {
   height: 100%;
   width: 100%; }
 
 body {
   height: 100%;
-  color: blue; }
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "Ubuntu", sans-serif; }
 
 h1 {
-  color: #212121;
-  font-size: 42px;
-  line-height: 44px; }
+  margin: 0;
+  padding: 0; }
 
 h2 {
-  color: #212121;
-  font-size: 38px;
-  line-height: 40px; }
+  margin: 0;
+  padding: 0; }
 
 h3 {
-  color: #212121;
-  font-size: 34px;
-  line-height: 36px; }
+  margin: 0;
+  padding: 0; }
 
 h4 {
-  color: #212121;
-  font-size: 30px;
-  line-height: 32px; }
+  margin: 0;
+  padding: 0; }
 
 h5 {
-  color: #212121;
-  font-size: 26px;
-  line-height: 28px; }
+  margin: 0;
+  padding: 0; }
 
 h6 {
-  color: #212121;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  color: #aeaead;
+  font-size: 42px;
+  line-height: 44px;
+  font-family: "Fjalla One", sans-serif;
+  color: #8dc63f; }
+  h1:after {
+    content: "#8dc63f Fjalla One, sans-serif";
+    padding-left: 10px; }
+
+h2 {
+  color: #aeaead;
+  font-size: 38px;
+  line-height: 40px;
+  font-family: "Fjalla One", sans-serif;
+  color: #2ab3ff; }
+  h2:after {
+    content: "#2ab3ff Fjalla One, sans-serif";
+    padding-left: 10px; }
+
+h3 {
+  color: #aeaead;
+  font-size: 34px;
+  line-height: 36px;
+  font-family: "Fjalla One", sans-serif;
+  color: #fc8300; }
+  h3:after {
+    content: "#fc8300 Fjalla One, sans-serif";
+    padding-left: 10px; }
+
+h4 {
+  color: #aeaead;
+  font-size: 30px;
+  line-height: 32px;
+  font-family: "Fjalla One", sans-serif;
+  color: #fc8300; }
+  h4:after {
+    content: "#fc8300 Fjalla One, sans-serif";
+    padding-left: 10px; }
+
+h5 {
+  color: #aeaead;
+  font-size: 26px;
+  line-height: 28px;
+  font-family: "Fjalla One", sans-serif;
+  color: #fc8300; }
+  h5:after {
+    content: "#fc8300 Fjalla One, sans-serif";
+    padding-left: 10px; }
+
+h6 {
+  color: #aeaead;
   font-size: 22px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-family: "Fjalla One", sans-serif;
+  color: #fc8300; }
+  h6:after {
+    content: "#fc8300 Fjalla One, sans-serif";
+    padding-left: 10px; }
 
 p {
-  color: #616161;
+  color: #aeaead;
   font-size: 16px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-family: "Ubuntu", sans-serif; }
 
 a {
-  color: #212121;
+  color: #155987;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s; }
+  a:hover {
+    color: #2ab3ff;
+    -webkit-transition: color .3s;
+    transition: color .3s; }

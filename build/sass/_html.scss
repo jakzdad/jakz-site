@@ -5,55 +5,120 @@ html {
 
 body {
   height: 100%;
-  color: blue;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: $ubuntu;
 }
 
 //Font Sizing
 //====================
+
+@for $index from 1 through 6 {
+  h#{$index}{
+    margin: 0;
+    padding: 0;
+  }
+}
+
 h1 {
-  color: $d1;
+  color: $pcolor;
   font-size: 42px;
   line-height: 44px;
+  font-family: $fjalla;
+  color: $green;
+
+  &:after {
+    content: '#{$green} #{$fjalla}';
+    padding-left: 10px;
+  }
 }
 
 h2 {
-  color: $d1;
+  color: $pcolor;
   font-size: 38px;
   line-height: 40px;
+  font-family: $fjalla;
+  color: $blue;
+
+  &:after {
+    content: '#{$blue} #{$fjalla}';
+    padding-left: 10px;
+  }
 }
 
 h3 {
-  color: $d1;
+  color: $pcolor;
   font-size: 34px;
   line-height: 36px;
+  font-family: $fjalla;
+  color: $orange;
+
+  &:after {
+    content: '#{$orange} #{$fjalla}';
+    padding-left: 10px;
+  }
 }
 
 h4 {
-  color: $d1;
+  color: $pcolor;
   font-size: 30px;
   line-height: 32px;
+  font-family: $fjalla;
+  color: $orange;
+
+  &:after {
+    content: '#{$orange} #{$fjalla}';
+    padding-left: 10px;
+  }
 }
 
 h5 {
-  color: $d1;
+  color: $pcolor;
   font-size: 26px;
   line-height: 28px;
+  font-family: $fjalla;
+  color: $orange;
+
+  &:after {
+    content: '#{$orange} #{$fjalla}';
+    padding-left: 10px;
+  }
+
 }
 
 h6 {
-  color: $d1;
+  color: $pcolor;
   font-size: 22px;
   line-height: 24px;
+  font-family: $fjalla;
+  color: $orange;
+
+  &:after {
+    content: '#{$orange} #{$fjalla}';
+    padding-left: 10px;
+  }
 }
 
 p {
-  color: $d2;
+  color: $pcolor;
   font-size: 16px;
   line-height: 18px;
+  font-family: $ubuntu;
+
 }
 
 a {
-  color: $d1;
+  color: $darkblue;
+  font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+  font-family: $ubuntu;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover {
+    color: $blue;
+    transition: color .3s;
+  }
 }
