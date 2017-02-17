@@ -147,13 +147,11 @@
   background-attachment: fixed;
   position: relative;
 
-
-
   &:before {
     content: '';
     width: 100%;
     height: 100%;
-    background: rgba(black, 0.7);
+    background: rgba(black, 1);
     display: block;
     position: absolute;
     top: 0;
@@ -201,6 +199,16 @@
         height: auto;
       }
     }
+
+    .promo {
+      max-width: 500px;
+      padding: 0 20px;
+
+      @media screen and (max-width: 600px ) {
+        max-width: calc(100% - 20px);
+      }
+    }
+
     .sign-up {
       @include form-reset;
       padding-top: 40px;
