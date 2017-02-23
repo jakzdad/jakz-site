@@ -4,7 +4,9 @@ html {
 
 body {
   height: 100%;
-  color: blue; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 h1 {
   color: #212121;
@@ -45,3 +47,27 @@ a {
   color: #212121;
   font-size: 16px;
   line-height: 18px; }
+
+header {
+  width: 350px;
+  background: pink;
+  overflow: hidden; }
+  header .nav-content {
+    position: relative;
+    height: 100%; }
+    header .nav-content:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 350px solid red;
+      border-right: 999px solid transparent;
+      position: absolute;
+      -webkit-transition: border .3s;
+      transition: border .3s; }
+    header .nav-content img {
+      width: 125px;
+      height: 125px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      border-radius: 100%; }
