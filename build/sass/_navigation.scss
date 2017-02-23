@@ -1,0 +1,39 @@
+header {
+  width: 350px;
+  background: pink;
+  overflow: hidden;
+
+  // &:hover {
+  //   .nav-content:before {
+  //     height: 999px;
+  //     border-right: 350px solid red;
+  //     transition: border-color .3s;
+  //   }
+  // }
+
+  .nav-content {
+    position: relative;
+    height: 100%;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 350px solid red;
+      border-right: 999px solid transparent;
+      position: absolute;
+      transition: border .3s;
+
+    }
+
+    img {
+      width: 125px;
+      height: 125px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      border-radius: 100%;
+
+    }
+  }//end nav content
+}
