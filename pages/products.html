@@ -9,8 +9,14 @@
 
     <div class="product-container">
       <div class="product-grid">
-        
+
         <a ng-href="#/products/{{ items.indexOf(item) }}" class="item-container" ng-repeat="item in items">
+          <div class="outOfStock" ng-show="item.outOfStock">
+            <h3>Out Of Stock</h3>
+          </div>
+          <div class="comingSoon" ng-show="item.comingSoon">
+            <h3>Coming Soon</h3>
+          </div>
           <img ng-src="{{ item.image }}" class="product-image" alt="demo-item">
           <h6 class="product-name">{{ item.product }}</h6>
           <p class="price">{{ item.price | currency }}</p>

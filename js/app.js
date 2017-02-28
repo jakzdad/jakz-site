@@ -42,6 +42,7 @@ lucentApp.config(['$routeProvider', '$locationProvider', function($routeProvider
 
 }]);
 
+
 lucentApp.controller('navController', ['$scope', function($scope){
 
   //nav show and hide
@@ -65,51 +66,86 @@ lucentApp.controller('contactController', ['$scope', function($scope){
   $scope.page = 'Contact';
 }]);
 
-lucentApp.controller('productsController', ['$scope', function($scope){
+lucentApp.controller('productsController', ['$scope', '$http', function($scope, $http){
 
   $scope.items = [
     {
       product: 'Connecticut Tee',
-      price: 23,
+      price: 22,
       image: 'images/tshirt.svg',
-      url: 'products/connecticut-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      outOfStock: false,
+      comingSoon: true,
+      gallery: [
+        {
+          imagePath: 'images/tshirt.svg'
+        },
+        {
+          imagePath: 'images/tshirt1.svg'
+        },
+        {
+          imagePath: 'images/tshirt2.svg'
+        }
+      ]
     },
     {
       product: 'Tiger Tee',
       price: 23,
       image: 'images/tshirt.svg',
-      url: 'products/tiger-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      outOfStock: true,
+      comingSoon: false
 
     },
     {
       product: 'Wolves Tee',
       price: 22,
       image: 'images/tshirt.svg',
-      url: 'products/wolves-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      outOfStock: false,
+      comingSoon: false
 
     },
     {
       product: 'Rockstar Tee',
       price: 21,
       image: 'images/tshirt.svg',
-      url: 'products/rockstar-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      outOfStock: false,
+      comingSoon: false
 
     },
     {
       product: 'Up Past Midnight Tee',
       price: 22,
       image: 'images/tshirt.svg',
-      url: 'products/up-past-midnight-tee.html'
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      outOfStock: false,
+      comingSoon: false
 
     },
     {
       product: 'This Tee',
       price: 25,
       image: 'images/tshirt.svg',
-      url: 'products/this-tee.html'
-
+      description: 'put description here',
+      availableSizes: 'XS S M L XL',
+      outOfStock: true,
+      comingSoon: false
     }
-  ]
+  ];
+
+  $scope.noLink = function() {
+    if (items.outOfStock = true) {
+      console.log('out');
+    }
+  }
+
 }]);
 
 lucentApp.controller('itemController', ['$scope', '$routeParams', '$timeout', function($scope, $routeParams, $timeout){

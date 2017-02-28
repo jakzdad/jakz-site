@@ -8,15 +8,15 @@
 // "\2022" outputs ascii character "•"
 
 $slick-font-path: "/fonts/" !default;
-$slick-font-family: "slick" !default;
+$slick-font-family: "icomoon" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: black !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
+$slick-prev-character: "\e900" !default;
+$slick-next-character: "\e901" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 6px !default;
+$slick-dot-size: 20px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
