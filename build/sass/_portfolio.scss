@@ -1,0 +1,21 @@
+.portfolio-container {
+  .portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      width: 30%;
+      // min-width: 300px;
+    }
+    .portfolio-item {
+      margin: 5px;
+      min-height: 250px;
+      background: rgba(#000, 0.3);
+      object-fit: cover;
+      overflow: hidden;
+    }//end portfolio-item
+
+  }//end portfolio-grid
+
+}//end portfolio-container

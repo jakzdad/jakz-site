@@ -1,73 +1,264 @@
-html {
-  height: 100%;
-  width: 100%; }
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400,600,700");
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot?rn322w");
+  src: url("/fonts/icomoon.eot?rn322w#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?rn322w") format("truetype"), url("/fonts/icomoon.woff?rn322w") format("woff"), url("/fonts/icomoon.svg?rn322w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-free-code-camp:before {
+  content: "\e900"; }
+
+.icon-github-square:before {
+  content: "\e901"; }
+
+.icon-facebook-square:before {
+  content: "\e902"; }
+
+.icon-twitter-square:before {
+  content: "\e903"; }
+
+.icon-outbox:before {
+  content: "\e904"; }
+
+.icon-menu:before {
+  content: "\e905"; }
 
 body {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  margin: 0; }
+
+main {
+  margin-left: 380px;
+  -webkit-transition: margin-left .3s;
+  transition: margin-left .3s;
+  padding: 100px 60px; }
+  main.menu-closed {
+    margin-left: 0;
+    -webkit-transition: margin-left .3s;
+    transition: margin-left .3s; }
+  main .section-title {
+    margin: 15px 0; }
 
 h1 {
-  color: #212121;
+  color: #e44342;
   font-size: 42px;
-  line-height: 44px; }
+  line-height: 44px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5px 0; }
 
 h2 {
-  color: #212121;
+  color: #e44342;
   font-size: 38px;
-  line-height: 40px; }
+  line-height: 40px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5px 0; }
 
 h3 {
-  color: #212121;
+  color: #e44342;
   font-size: 34px;
-  line-height: 36px; }
+  line-height: 36px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5px 0; }
 
 h4 {
-  color: #212121;
+  color: #e44342;
   font-size: 30px;
-  line-height: 32px; }
+  line-height: 32px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5px 0; }
 
 h5 {
-  color: #212121;
+  color: #87c388;
   font-size: 26px;
-  line-height: 28px; }
+  line-height: 28px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5px 0; }
 
 h6 {
-  color: #212121;
+  color: #87c388;
   font-size: 22px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 5px 0; }
 
 p {
-  color: #616161;
+  color: #3f3f3f;
   font-size: 16px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif; }
 
 a {
-  color: #212121;
+  color: #f19942;
   font-size: 16px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: color .3s;
+  transition: color .3s; }
+  a:hover {
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    color: #e44342; }
+
+.open-menu {
+  border: 0;
+  background: #217c79;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-size: 0; }
+  .open-menu:hover:before {
+    color: #e44342; }
+  .open-menu:before {
+    content: '\e905';
+    font-family: 'Icomoon';
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 header {
-  width: 350px;
-  background: pink;
-  overflow: hidden; }
-  header .nav-content {
-    position: relative;
-    height: 100%; }
-    header .nav-content:before {
-      content: '';
-      width: 0;
-      height: 0;
-      border-top: 350px solid red;
-      border-right: 999px solid transparent;
+  background: #217c79;
+  display: inline-block;
+  padding: 50px 40px 0px;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; }
+  header.closed {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s; }
+  header .close-menu {
+    border: 0;
+    background: #217c79;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    font-size: 0; }
+    header .close-menu:hover:before {
+      color: #e44342; }
+    header .close-menu:before {
+      content: '\e904';
+      font-family: 'Icomoon';
+      font-size: 20px;
+      color: #fff;
       position: absolute;
-      -webkit-transition: border .3s;
-      transition: border .3s; }
-    header .nav-content img {
-      width: 125px;
-      height: 125px;
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      border-radius: 100%; }
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+              transform: translate(-50%, -50%) rotate(-90deg); }
+  header .about-section {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative; }
+    header .about-section img {
+      width: 150px;
+      border-radius: 100%;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      display: block;
+      margin: 0 auto 15px; }
+    header .about-section h6 {
+      text-align: center; }
+    header .about-section h5 {
+      text-align: center; }
+    header .about-section p {
+      color: #fff; }
+  header .menu-section {
+    margin-bottom: 15px;
+    position: relative; }
+    header .menu-section .main-navigation {
+      list-style: none;
+      padding: 0; }
+      header .menu-section .main-navigation li {
+        padding: 5px 0; }
+        header .menu-section .main-navigation li a {
+          color: #fff;
+          font-family: "Fjalla One", sans-serif;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 18px; }
+          header .menu-section .main-navigation li a:hover {
+            color: #e44342; }
+  header .social-section {
+    position: relative; }
+    header .social-section .social-navigation {
+      list-style: none;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      header .social-section .social-navigation li {
+        padding: 0 5px; }
+        header .social-section .social-navigation li a {
+          font-size: 0;
+          text-decoration: none; }
+          header .social-section .social-navigation li a:hover:before {
+            color: #e44342; }
+          header .social-section .social-navigation li a:before {
+            color: #fff; }
+          header .social-section .social-navigation li a[name*="facebook"]:before {
+            content: '\e902';
+            font-family: 'Icomoon';
+            font-size: 30px; }
+          header .social-section .social-navigation li a[name*="twitter"]:before {
+            content: '\e903';
+            font-family: 'Icomoon';
+            font-size: 30px; }
+          header .social-section .social-navigation li a[name*="github"]:before {
+            content: '\e901';
+            font-family: 'Icomoon';
+            font-size: 30px; }
+          header .social-section .social-navigation li a[name*="fcc"]:before {
+            content: '\e900';
+            font-family: 'Icomoon';
+            font-size: 30px; }
+
+.portfolio-container .portfolio-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .portfolio-container .portfolio-grid a {
+    width: 30%; }
+  .portfolio-container .portfolio-grid .portfolio-item {
+    margin: 5px;
+    min-height: 250px;
+    background: rgba(0, 0, 0, 0.3);
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden; }

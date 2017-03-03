@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400,600,700');
+
+$font1: 'Fjalla One', sans-serif;
+$font2: 'Open Sans', sans-serif;
+
+
+//Icons
+@mixin icon-facebook($size) {
+  content: '\e902';
+  font-family: 'Icomoon';
+  font-size: $size;
+}
+
+@mixin icon-twitter($size) {
+  content: '\e903';
+  font-family: 'Icomoon';
+  font-size: $size;
+}
+
+@mixin icon-github($size) {
+  content: '\e901';
+  font-family: 'Icomoon';
+  font-size: $size;
+}
+
+@mixin icon-fcc($size) {
+  content: '\e900';
+  font-family: 'Icomoon';
+  font-size: $size;
+}
+
+@mixin icon-menu($size) {
+  content: '\e905';
+  font-family: 'Icomoon';
+  font-size: $size;
+}
+
+@mixin icon-close($size) {
+  content: '\e904';
+  font-family: 'Icomoon';
+  font-size: $size;
+}

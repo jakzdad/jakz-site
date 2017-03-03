@@ -1,59 +1,97 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+html {}
 
 body {
-  height: 100%;
-  display: flex;
+  margin: 0;
 }
+
+main {
+ margin-left: 380px;
+ transition: margin-left .3s;
+ padding: 100px 60px;
+ 
+ &.menu-closed {
+   margin-left: 0;
+   transition: margin-left .3s;
+ }//end menu-closed
+
+ .section-title {
+   margin: 15px 0;
+ }//end section-title
+
+}//end main
 
 //Font Sizing
 //====================
+  //Open Sans SemiBold = 600
+  //Open Sans Bold = 700
+
 h1 {
-  color: $d1;
+  color: $d3;
   font-size: 42px;
   line-height: 44px;
+  font-family: $font1;
+  margin: 5px 0;
 }
 
 h2 {
-  color: $d1;
+  color: $d3;
   font-size: 38px;
   line-height: 40px;
+  font-family: $font1;
+  margin: 5px 0;
+
 }
 
 h3 {
-  color: $d1;
+  color: $d3;
   font-size: 34px;
   line-height: 36px;
+  font-family: $font1;
+  margin: 5px 0;
 }
 
 h4 {
-  color: $d1;
+  color: $d3;
   font-size: 30px;
   line-height: 32px;
+  font-family: $font1;
+  margin: 5px 0;
 }
 
 h5 {
-  color: $d1;
+  color: $d2;
   font-size: 26px;
   line-height: 28px;
+  font-family: $font1;
+  margin: 5px 0;
 }
 
 h6 {
-  color: $d1;
+  color: $d2;
   font-size: 22px;
   line-height: 24px;
+  font-family: $font1;
+  margin: 5px 0;
 }
 
 p {
-  color: $d2;
+  color: $darkgray;
   font-size: 16px;
   line-height: 18px;
+  font-family: $font2;
+
 }
 
 a {
-  color: $d1;
+  color: $d5;
   font-size: 16px;
   line-height: 18px;
+  font-family: $font2;
+  transition: color .3s;
+
+  &:hover {
+    transition: color .3s;
+    color: $d3;
+  }
+
 }
