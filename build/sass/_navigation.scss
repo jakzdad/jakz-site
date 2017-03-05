@@ -1,3 +1,4 @@
+//Button To Open Mene
 .open-menu {
   border: 0;
   background: $d4;
@@ -22,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+}//end open menu
 
 header {
   background: $d4;
@@ -64,7 +65,7 @@ header {
       left: 50%;
       transform: translate(-50%, -50%) rotate(-90deg);
     }
-  }
+  }//end close-menu
 
   .about-section {
     margin-bottom: 20px;
@@ -90,7 +91,7 @@ header {
     p {
       color: $white;
     }
-  }
+  }//end about-section
 
   .menu-section {
     margin-bottom: 15px;
@@ -107,8 +108,10 @@ header {
           text-decoration: none;
           text-transform: uppercase;
           font-size: 18px;
+          position: static;
 
-          &:hover {
+          &:hover,
+          &.active {
             color: $d3;
           }
         }
@@ -132,12 +135,12 @@ header {
           font-size: 0;
           text-decoration: none;
 
-          &:hover:before {
-            color: $d3;
-          }
-
           &:before {
             color: #fff;
+          }
+
+          &:hover:before {
+            color: $d3;
           }
 
           &[name*="facebook"] {
@@ -164,8 +167,8 @@ header {
             }
           }
 
-        }
+        }//end a
       }
-    }
-  }
-}
+    }//end social-navigation
+  }//end social-section
+}//end header

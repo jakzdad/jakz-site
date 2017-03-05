@@ -17,7 +17,15 @@
 <button type="button" class="open-menu" name="button">Open</button>
 
 <header>
-
+  <form class="contact-form" autocomplete="on">
+    <button type="button" class="close-contact">X</button>
+    <h4>Contact Me</h4>
+    <input type="text" name="firstName" value="" placeholder="First Name">
+    <input type="text" name="lastName" value="" placeholder="Last Name">
+    <input type="email" name="email" value="" placeholder="Email">
+    <textarea name="message" rows="4" placeholder="Enter Message"></textarea>
+    <input type="submit" name="submit" value="submit">
+  </form>
   <section class="about-section">
     <div class="about-image">
       <img src="images/aboutpic.jpg" alt="Picture of Jordan Melendez">
@@ -31,7 +39,7 @@
       <li><a href="#">Blog</a></li>
       <li><a href="/portfolio.html">Portfolio</a></li>
       <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a class="contact-link" href="#">Contact</a></li>
     </ul>
   </section>
   <section class="social-section">

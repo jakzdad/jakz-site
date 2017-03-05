@@ -5,6 +5,12 @@ $font2: 'Open Sans', sans-serif;
 
 
 //Icons
+@mixin icon-x($size) {
+  content: '\e906';
+  font-family: 'Icomoon';
+  font-size: $size;
+}
+
 @mixin icon-facebook($size) {
   content: '\e902';
   font-family: 'Icomoon';
