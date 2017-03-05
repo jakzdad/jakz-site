@@ -1,0 +1,42 @@
+input,textarea {
+  background: none;
+  border: 1px solid $white;
+  border-radius: 3px;
+  color: $white;
+  font-size: 14px;
+  padding: 10px 17px;
+  margin: 10px 0;
+  transition: all .3s;
+
+  &:focus {
+    outline-color: $d2;
+    border: 1px solid transparent;
+
+  }
+
+  &[name*="submit"] {
+    border: 1px solid $d2;
+    color: $d2;
+    transition: all .3s;
+
+    &:hover {
+      background: $d2;
+      border: 1px solid $white;
+      color: $white;
+      transition: all .3s;
+    }
+  }//end submit button
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $placeholder;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:  $placeholder;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:  $placeholder;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:  $placeholder;
+}

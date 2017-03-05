@@ -1,0 +1,20 @@
+//Media Queries
+$flippers: 400px;
+$mobile: 500px;
+$phablet: 600px;
+$tablet: 768px;
+$bigger-tablet: 900px;
+$desktop-width: 1024;
+$max-desktop: 1280px;
+
+@mixin mediaMax ($window) { //when less than
+  @media (max-width: #{$window - 1px}) {
+    @content;
+  }
+}
+
+@mixin mediaMin ($window) { //when more than
+  @media (min-width: #{$window}) {
+    @content;
+  }
+}
