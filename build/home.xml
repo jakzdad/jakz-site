@@ -1,0 +1,59 @@
+<Zestimate:zestimate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Zestimate="http://www.zillow.com/static/xsd/Zestimate.xsd" xsi:schemaLocation="http://www.zillow.com/static/xsd/Zestimate.xsd http://www.zillowstatic.com/vstatic/43cd01f/static/xsd/Zestimate.xsd">
+<request>
+<zpid>2099804028</zpid>
+</request>
+<message>
+<text>Request successfully processed</text>
+<code>0</code>
+</message>
+<response>
+<zpid>2099804028</zpid>
+<links>
+<homedetails>
+http://www.zillow.com/homedetails/30-Southbridge-Ct-30-Simsbury-CT-06070/2099804028_zpid/
+</homedetails>
+<mapthishome>http://www.zillow.com/homes/2099804028_zpid/</mapthishome>
+<comparables>http://www.zillow.com/homes/comps/2099804028_zpid/</comparables>
+</links>
+<address>
+<street>30 Southbridge Ct # 30</street>
+<zipcode>06070</zipcode>
+<city>Simsbury</city>
+<state>CT</state>
+<latitude>41.630805</latitude>
+<longitude>-72.634858</longitude>
+</address>
+<zestimate>
+<amount currency="USD">284544</amount>
+<last-updated>03/15/2017</last-updated>
+<oneWeekChange deprecated="true"/>
+<valueChange duration="30" currency="USD">-1380</valueChange>
+<valuationRange>
+<low currency="USD">244708</low>
+<high currency="USD">312998</high>
+</valuationRange>
+<percentile>0</percentile>
+</zestimate>
+<localRealEstate>
+<region name="Cromwell" id="55461" type="city">
+<zindexValue>203,100</zindexValue>
+<links>
+<overview>
+http://www.zillow.com/local-info/CT-Cromwell/r_55461/
+</overview>
+<forSaleByOwner>http://www.zillow.com/cromwell-ct/fsbo/</forSaleByOwner>
+<forSale>http://www.zillow.com/cromwell-ct/</forSale>
+</links>
+</region>
+</localRealEstate>
+<regions>
+<zipcode-id>60127</zipcode-id>
+<city-id>55461</city-id>
+<county-id>2800</county-id>
+<state-id>11</state-id>
+</regions>
+</response>
+</Zestimate:zestimate>
+<!--
+ H:007  T:12ms  S:874  R:Sat Mar 18 11:09:46 PDT 2017  B:5.0.41124-master.3d8d482~hotfix_pre.db2f251
+-->
