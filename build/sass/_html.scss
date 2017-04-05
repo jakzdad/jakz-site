@@ -5,6 +5,8 @@ html {
 
 body {
   height: 100%;
+  display: flex;
+  padding: 5px;
 }
 
 //Font Sizing
@@ -55,4 +57,11 @@ a {
   color: $d1;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

@@ -13,12 +13,16 @@ jQuery(function($) {
   // Home Page Specific Scripts
   HOME = {
     run: function() {
-      this.justTesting();
+      this.interiorSlider();
     },
 
     //Define Functions Below
-    justTesting: function() {
-      console.log('home');
+    interiorSlider: function() {
+      $("main").find(".slider-container").slick({
+        fade: true,
+        speed: 500,
+        cssEase: "linear"
+      });
     }
   };
 
