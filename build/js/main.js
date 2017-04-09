@@ -33,6 +33,7 @@ jQuery(function($) {
   GLOBAL = {
     run: function() {
       this.getCurrentYear();
+      this.currentPage();
     },
 
     //Add current year in footer to not have to worry about it..ever
@@ -42,7 +43,8 @@ jQuery(function($) {
 
     currentPage: function() {
       //make sure to add you main navigation class here.
-      $('.main-navigation a[href*="' + location.pathname + '"]').addClass('active');
+      $('.main-nav a[href*="' + location.pathname + '"]').addClass('active');
+      console.log(location.pathname);
     }
   };
 

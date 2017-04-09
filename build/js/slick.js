@@ -764,8 +764,8 @@
         _.$slider.off('focus.slick blur.slick');
 
         if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
-            _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide);
-            _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide);
+            _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide); // jshint ignore:line
+            _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide); // jshint ignore:line
         }
 
         _.$list.off('touchstart.slick mousedown.slick', _.swipeHandler);
