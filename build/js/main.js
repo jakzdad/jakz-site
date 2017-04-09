@@ -20,7 +20,7 @@ jQuery(function($) {
     interiorSlider: function() {
       $("main").find(".slider-container").slick({
         fade: true,
-        speed: 500,
+        speed: 600,
         cssEase: "linear"
       });
     }
