@@ -1,174 +1,72 @@
-//Button To Open Mene
-.open-menu {
-  border: 0;
-  background: $d4;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50px;
-  left: 0px;
-  font-size: 0;
-
-  &:hover {
-    &:before {
-      color: $d3;
-    }
-  }
-
-  &:before {
-    @include icon-menu(30px);
-    color: $white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}//end open menu
-
 header {
-  background: $d4;
-  display: inline-block;
-  padding: 50px 40px 0px;
-  width: 300px;
-  height: 100%;
   position: fixed;
-  transition: transform .3s;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
+  z-index: 5;
+  height: 100%;
+  width: auto;
+  top: 30%;
+  left: 40px;
+}
+.main-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-  &.closed {
-    transform: translateX(-100%);
-    transition: transform .3s;
-  }
-
-  .close-menu {
-    border: 0;
-    background: $d4;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 20px;
-    font-size: 0;
-
-    &:hover {
-      &:before {
-        color: $d3;
-      }
-    }
-
-    &:before {
-      @include icon-close(20px);
+  li {
+    a {
       color: $white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-90deg);
-    }
-  }//end close-menu
-
-  .about-section {
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative;
-    img {
-      width: 150px;
-      border-radius: 100%;
-      border: 5px solid rgba($white, 0.3);
       display: block;
-      margin: 0 auto 15px;
+      height: 40px;
+      position: relative;
+      padding: 9px 20px 9px 50px;
+      line-height: 40px;
+      font-size: 0;
+      transition: font .3s;
 
-    }
 
-    h6 {
-      text-align: center;
-    }
+      &:before {
+        content: '';
+        color: rgba(#fff, 0.6);
+        font-size: 15px;
+        padding: 10px;
+        border: 1px solid rgba(#fff, 0.6);
+        border-radius: 100%;
+        @include topCenter;
+        left: 0;
+        transition: font .3s;
 
-    h5 {
-      text-align: center;
-    }
+      }
 
-    p {
-      color: $white;
-    }
-  }//end about-section
+      &:hover {
+        font-size: 16px;
+        transition: font .3s;
+        &:before {
+          font-size: 17px;
+          transition: font .3s, color .3s, border .3s;
+          color: #fff;
+          border-color: #fff;
 
-  .menu-section {
-    margin-bottom: 15px;
-    position: relative;
-
-    .main-navigation {
-      list-style: none;
-      padding: 0;
-      li {
-        padding: 5px 0;
-        a {
-          color: $white;
-          font-family: $font1;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 18px;
-          position: static;
-
-          &:hover,
-          &.active {
-            color: $d3;
-          }
         }
       }
-    }//end main-navigation
-  }//end menu-section
 
-  .social-section {
-    position: relative;
-
-    .social-navigation {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-
-      li {
-        padding: 0 5px;
-
-        a {
-          font-size: 0;
-          text-decoration: none;
-
-          &:before {
-            color: #fff;
-          }
-
-          &:hover:before {
-            color: $d3;
-          }
-
-          &[name*="facebook"] {
-            &:before {
-              @include icon-facebook(30px);
-            }
-          }
-
-          &[name*="twitter"] {
-            &:before {
-              @include icon-twitter(30px);
-            }
-          }
-
-          &[name*="github"] {
-            &:before {
-              @include icon-github(30px);
-            }
-          }
-
-          &[name*="fcc"] {
-            &:before {
-              @include icon-fcc(30px);
-            }
-          }
-
-        }//end a
+      &.home:before {
+        @include icon($home);
       }
-    }//end social-navigation
-  }//end social-section
-}//end header
+
+      &.about:before {
+        @include icon($user);
+      }
+
+      &.work:before {
+        @include icon($work);
+      }
+
+      &.contact:before {
+        @include icon($contact);
+      }
+
+    }//end a
+  }//end li
+}//end main-nav

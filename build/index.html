@@ -12,51 +12,37 @@
 
 </head>
 
-<body class="">
+<body class="body">
+  <main class="main-wrapper">
+    <header class="header">
+      <nav>
+        <ul class="main-nav">
+          <li><a class="home" href="#">Home</a></li>
+          <li><a class="about" href="#">About</a></li>
+          <li><a class="work" href="#">Work</a></li>
+          <li><a class="contact" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home-section">
+      <div class="content">
+        <h1>Ipsum Solor</h1>
+        <p>Sed at lacinia orci nulla</p>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="content">
+        <h1 class="section-title">About Me</h1>
+        <p>Sed at lacinia orci. Nulla lobortis luctus est vitae malesuada. Ut et nulla tempor, porta ex vel, condimentum est. Sed est neque, auctor nec magna id, congue lacinia nisi. Cras porta mi id risus vulputate, in commodo velit viverra. Morbi sed augue ultricies, tempor erat eget, lacinia metus. Quisque sit amet ullamcorper neque.</p>
+      </div>
+      <div class="callout-box">
+        <h4 class="callout-title">Callout Title</h4>
+        <p>Phasellus pulvinar felis in dapibus finibus. Etiam urna lacus, ornare id lectus euismod, venenatis convallis tortor. Quisque consectetur hendrerit tristique.</p>
+      </div>
 
-<button type="button" class="open-menu" name="button">Open</button>
+    </section>
 
-<header>
-  <form class="contact-form" autocomplete="on">
-    <button type="button" class="close-contact">X</button>
-    <h4>Contact Me</h4>
-    <input type="text" name="firstName" value="" placeholder="First Name">
-    <input type="text" name="lastName" value="" placeholder="Last Name">
-    <input type="email" name="email" value="" placeholder="Email">
-    <textarea name="message" rows="4" placeholder="Enter Message"></textarea>
-    <input type="submit" name="submit" value="submit">
-  </form>
-  <section class="about-section">
-    <div class="about-image">
-      <img src="images/aboutpic.jpg" alt="Picture of Jordan Melendez">
-      <h5>Jordan Melendez</h5>
-      <h6>Front End Developer</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum nibh efficitur euismod tristique. Duis ac lacus elit. Nulla efficitur, massa id accumsan pharetra, libero justo commodo nisl, a fringilla leo ex ut urna</p>
-    </div>
-  </section>
-  <section class="menu-section">
-    <ul class="main-navigation">
-      <li><a href="#">Blog</a></li>
-      <li><a href="/portfolio.html">Portfolio</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a class="contact-link" href="#">Contact</a></li>
-    </ul>
-  </section>
-  <section class="social-section">
-    <ul class="social-navigation">
-      <li><a name="facebook" href="#">Facebook</a></li>
-      <li><a name="twitter" href="#">Twitter</a></li>
-      <li><a name="github" href="#">Github</a></li>
-      <li><a name="fcc" href="#">FreeCodeCamp</a></li>
-    </ul>
-  </section>
-
-  <button type="button" class="close-menu" name="button">Close</button>
-</header>
-
-<main>
-
-</main>
+  </main>
 
 <!--build:js js/main.min.js -->
 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>

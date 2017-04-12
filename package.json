@@ -16,7 +16,7 @@
     "url": "https://github.com/jmelendev/jz-build/issues"
   },
   "homepage": "https://github.com/jmelendev/jz-build#readme",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^2.18.7",
     "del": "^2.2.2",
     "gulp": "^3.9.1",

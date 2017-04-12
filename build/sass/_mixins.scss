@@ -18,3 +18,9 @@ $max-desktop: 1280px;
     @content;
   }
 }
+
+@mixin topCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
