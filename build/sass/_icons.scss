@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?cfemo3');
+  src:  url('../fonts/icomoon.eot?cfemo3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?cfemo3') format('truetype'),
+    url('../fonts/icomoon.woff?cfemo3') format('woff'),
+    url('../fonts/icomoon.svg?cfemo3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon($icon) {
+  content: $icon;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+$user: '\e900';
+$work: '\e901';
+$contact: '\e902';
+$home: '\e903';
+
+.icon-user:before {
+  content: "\e900";
+}
+.icon-briefcase:before {
+  content: "\e901";
+}
+.icon-paper-plane:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
+}

@@ -1,0 +1,49 @@
+.home-section {
+  max-height: 100vh;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  perspective: 400px;
+
+  .content {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 150px;
+    transform: rotateY(20deg) rotateZ(-6deg) rotateX(0deg);
+    z-index: 5;
+
+    &:hover {
+      p {
+        margin-left: 30%;
+        transition: margin .5s;
+      }
+    }
+
+    h1 {
+      font-size: 150px;
+      line-height: .5;
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+      margin-left: 100%;
+      white-space: nowrap;
+      transition: margin .5s;
+
+    }
+
+  }//end content
+
+  &:before {
+    content: '';
+    background: linear-gradient(90deg, $d3, $d2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}//end home-section

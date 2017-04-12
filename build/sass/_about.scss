@@ -1,0 +1,21 @@
+.about-section {
+  display: flex;
+  max-width: 90%;
+  margin: 20px auto;
+
+  .content {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }//end content
+
+  .callout-box {
+    box-shadow: -3px -3px 10px 1px rgba(0,0,0,.1);
+    background: $white;
+    flex: 1 0 40%;
+    max-width: 40%;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: -60px;
+  }
+}//end about-section
