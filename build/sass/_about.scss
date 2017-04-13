@@ -2,10 +2,72 @@
   display: flex;
   max-width: 90%;
   margin: 20px auto;
+  position: relative;
+  justify-content: space-around;
 
   .content {
     flex: 1 0 50%;
     max-width: 50%;
+  }//end content
+
+  .timeline {
+    flex: 1 0 50%;
+    max-width: 40%;
+    margin-top:  125px;
+
+    .timeline-list {
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        justify-content: space-around;
+        opacity: 0.2;
+        transition: opacity .3s;
+
+
+        .title {
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: right;
+          width: 30%;
+        }//end title
+
+        &.slick-active{
+          opacity: 1;
+          transition: opacity .3s;
+
+        }//end slick-active
+
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+          transition: opacity .3s;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }//end li
+    }// end timeline-list
+
+    .slick-arrow {
+      right: -20px;
+      left: auto;
+
+      &.slick-prev {
+        top: 30%;
+        transform: translateY(0) rotate(90deg);
+        animation: bounceUp .4s 3;
+      }
+
+      &.slick-next {
+        bottom: 30%;
+        top: auto;
+        transform: translateY(0) rotate(90deg);
+        animation: bounceDown .4s 3;
+      }
+    }//end slick-arrow
   }//end content
 
   .callout-box {
